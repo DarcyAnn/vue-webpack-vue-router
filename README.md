@@ -1,6 +1,20 @@
 # vue-webpack-vue-router
 A single page application staging with vue, webpack and vue-router.
 
+## Usage
+
+```
+# 安装依赖
+$ npm install
+
+# 开发 
+$ npm run dev
+
+# 打包
+$ npm run build
+```
+## Directory Tree
+
 ``` 
 .
 ├── index.html
