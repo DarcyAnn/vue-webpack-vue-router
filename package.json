@@ -1,0 +1,37 @@
+{
+  "name": "vue-webpack-vue-router",
+  "version": "1.0.0",
+  "description": "vue webpack vue-router",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=production webpack -p --progress"
+  },
+  "keywords": ["vue","webpack","vue-router"],
+  "author": "Darcy",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.3.3",
+    "vue-router": "^2.5.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "cross-env": "^5.0.0",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "style-loader": "^0.17.0",
+    "url-loader": "^0.5.8",
+    "vue-hot-reload-api": "^2.1.0",
+    "vue-loader": "^12.0.4",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5",
+    "webpack-merge": "^4.1.0"
+  }
+}
