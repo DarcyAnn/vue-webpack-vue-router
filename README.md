@@ -1,5 +1,5 @@
 # vue-webpack-vue-router
-A single page application staging with vue, webpack and vue-router.
+A single page application staging with vue2.x, webpack2.x and vue-router2.x.
 
 ## Usage
 
