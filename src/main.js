@@ -3,8 +3,10 @@ import './assets/styles/reset.css';
 import App from './views/App.vue'
 import VueRouter from 'vue-router'
 import routes from './route-config.js'
+import VueResource from 'vue-resource'
 
 Vue.use(VueRouter)
+Vue.use(VueResource)
 
 const router = new VueRouter({
     mode: 'hash',
