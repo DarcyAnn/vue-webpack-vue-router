@@ -11,6 +11,7 @@
 
 <script>
 import Paging from '../../components/Paging.vue'
+import api from '../../services/api.js'
 export default {
   name: 'homepage',
   data () {
@@ -29,14 +30,15 @@ export default {
   },
   methods: {
     init() {
-      this.$http.jsonp('http://api.douban.com/v2/movie/in_theaters',{ params: this.searchReq, })
-      .then(function(response){
-        this.sumCount = response.body.total;
-        this.movies = response.data.subjects;
+      api.getMovies(this.searchReq)
+      .then((res) => {
+        this.sumCount = res.body.total;
+        this.movies = res.data.subjects;
       })
-      .catch(function(err){
+      .catch((err) => {
         console.log('Err:', err);
       });
+
     },
     pageTurn (i, count) {
       var vm = this;
