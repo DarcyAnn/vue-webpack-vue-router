@@ -9,10 +9,10 @@
 
 export default {
   name: 'detailpage',
-  data () {
+  data() {
     return {
-      msg: 'DetailPage!'
+      msg: 'DetailPage!',
     }
-  }
+  },
 }
 </script>

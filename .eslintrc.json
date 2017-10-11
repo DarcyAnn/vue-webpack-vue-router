@@ -1,0 +1,22 @@
+{
+    "extends": [
+        "airbnb-base",
+        "plugin:vue/recommended"
+    ],
+    "globals": {
+        "BASE_URL": true,
+        "SSO": true,
+        "window": false,
+        "clearTimeout": false,
+        "setTimeout": false,
+        "document": false,
+        "fetch": false
+    },
+    "rules": {
+        "semi": [
+            "error",
+            "never"
+        ],
+        "vue/valid-v-if": "error"
+    }
+}
